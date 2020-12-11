@@ -2,8 +2,7 @@ import React, {useContext} from 'react'
 import { List as AntList, Avatar } from 'antd';
 import 'antd/dist/antd.css'; 
 
-import UserContext, { UserProvider } from "../contexts/UserContext";
-import FilterUser from "../components/FilterUser";
+import UserContext from "../contexts/UserContext";
 
 function List() {
     const { users, filteredUsers, setUsers } = useContext(UserContext);
